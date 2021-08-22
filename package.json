@@ -1,5 +1,5 @@
 {
-  "name": "discord-moderation-bot",
+  "name": "ClandFast-Bot-Mod",
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
@@ -35,6 +35,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Manav Garg",
-  "license": "ISC"
+  "author": "GproGamer12",
+  "license": "MIT"
 }
