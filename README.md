@@ -1,6 +1,6 @@
 # Moderation Bot
 
-#### Requirements & Steps
+## Requirements & Steps
 * This Project
 * Node.js, Discord.js Installed
 * Discord Bot Token, Prefix
@@ -8,14 +8,14 @@
 * Run `npm i` once in Terminal to install Dependencies
 * Run `node index.js` to ***RUN*** the bot.
 
-#### Features & Info
+## Features & Info
 * Author: `GproGamer12`
 * Moderation Bot built to manage discord servers.
 * This bot has all the premium commands too. Hackban/forceban [Type of ip ban] is also available
 * Modular Discord bot built entirely on pure JavaScript using Discord.JS.
 * Modlogs for all the actions.
 
-#### Commands
+## Commands
 * Ban | Unban
 * Deafen | Undeafen
 * DisableModLogChannel | SetModLogChannel
@@ -41,7 +41,6 @@
  * Soon the bot will be updated, new functions will be added.
  * The bot works best with quick.db or better-sqlite3.
  * You can modify the code without any fear, you have the freedom to put the bot to your preferences.
- * 
 
 # Contributors:
  * [GproGamer12](https://github.com/GproGamer12) - Code, Commands, File Structure and Message Events handler.
