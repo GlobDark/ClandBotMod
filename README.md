@@ -1,6 +1,7 @@
 # Moderation Bot
 
 ## Requirements & Steps
+* **This project belongs to discord v12. Soon update the code to v13**
 * This Project
 * Node.js, Discord.js Installed
 * Discord Bot Token, Prefix
