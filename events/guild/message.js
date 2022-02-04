@@ -5,9 +5,9 @@ const queue3 = new Map();
 const queue = new Map();
 const games = new Map()
 
-module.exports = async (bot, message) => {
+module.exports = async (client, message) => {
     try {
-        if (message.author.bot || message.channel.type === "dm") return;
+        if (message.author.client || message.channel.type === "dm") return;
 
         let prefix;
         let fetched = await db.fetch(`prefix_${message.guild.id}`);
@@ -30,7 +30,7 @@ module.exports = async (bot, message) => {
             games: games
         }
 
-        var commandfile = bot.commands.get(cmd) || bot.commands.get(bot.aliases.get(cmd))
+        var commandfile = client.commands.get(cmd) || client.commands.get(client.aliases.get(cmd))
          if (commandfile){
 
          let  dis = db.fetch(`${commandfile.config.name}_${message.channel.id}_${message.guild.id}`)
@@ -41,7 +41,7 @@ module.exports = async (bot, message) => {
              
             console.log(commandfile)
         
-            commandfile.run(bot, message, args, ops)
+            commandfile.run(client, message, args, ops)
             
             
          }
@@ -65,9 +65,9 @@ const queue3 = new Map();
 const queue = new Map();
 const games = new Map()
 
-module.exports = async (bot, message) => {
+module.exports = async (client, message) => {
     try {
-        if (message.author.bot || message.channel.type === "dm") return;
+        if (message.author.client || message.channel.type === "dm") return;
 
         let prefix;
         let fetched = await db.fetch(`prefix_${message.guild.id}`);
@@ -90,8 +90,8 @@ module.exports = async (bot, message) => {
             games: games
         }
 
-        var commandfile = bot.commands.get(cmd) || bot.commands.get(bot.aliases.get(cmd))
-        if (commandfile) commandfile.run(bot, message, args, ops)
+        var commandfile = client.commands.get(cmd) || client.commands.get(client.aliases.get(cmd))
+        if (commandfile) commandfile.run(client, message, args, ops)
 
 
     } catch (e) {
